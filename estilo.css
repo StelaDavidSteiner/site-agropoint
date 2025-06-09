@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background: #121212;
+  color: #E0E0E0;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.location p {
+  font-weight: 600;
+  color: #1DE9B6;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+/* HEADER */
+.header {
+  background: #1E1E1E;
+  color: #E0E0E0;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(29, 233, 182, 0.3);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.logo span {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #E0E0E0;
+}
+
+/* Estilo unificado para todos os botões do menu e botão reserva */
+nav ul.menu li a,
+.btn-reserva {
+  background-color: #1DE9B6;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  color: #121212 !important;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+nav ul.menu li a:hover,
+.btn-reserva:hover {
+  background-color: #17BFA0;
+}
+
+nav ul.menu {
+  list-style: none;
+  display: flex;
+  gap: 0.8rem;
+}
+
+/* Remove regras duplicadas */
+nav ul.menu li a {
+  font-weight: 700;
+}
+
+/* HERO */
+.hero {
+  background: url('hero-bg.jpg') center center/cover no-repeat;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  color: #E0E0E0;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(18,18,18,0.7);
+  z-index: 0;
+}
+
+.hero-content {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-family: 'EB Garamond', serif; /* ou troque por outra */
+  font-size: 5rem; 
+  font-weight: 700;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* sombra mais forte */
+  margin-bottom: 1rem;
+  letter-spacing: 2px; /* espaçamento entre letras para efeito */
+}
+
+
+.hero p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+/* REGRAS */
+.rules {
+  background: #1E1E1E;
+  padding: 3rem 0;
+  border-radius: 8px;
+  margin-top: 2rem;
+  box-shadow: 0 0 10px rgba(29, 233, 182, 0.1);
+  color: #B0B0B0;
+}
+
+.rules h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 2rem;
+  color: #1DE9B6;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.rules p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #B0B0B0;
+}
+
+.rules ul {
+  list-style: inside disc;
+  max-width: 600px;
+  margin: 0 auto 1.5rem auto;
+  color: #B0B0B0;
+  font-weight: 500;
+}
+
+.rules ul li {
+  margin-bottom: 0.8rem;
+}
+
+.rules ul li strong {
+  color: #1DE9B6;
+}
+
+.alert {
+  text-align: center;
+  color: #FF5252;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.thank {
+  text-align: center;
+  margin-top: 0.5rem;
+  color: #1DE9B6;
+  font-weight: 600;
+}
+
+/* VALORES */
+.prices {
+  background: #1E1E1E;
+  padding: 2.5rem 0;
+  margin-top: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  color: #B0B0B0;
+}
+
+.prices h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1DE9B6;
+}
+
+.prices p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #B0B0B0;
+}
+
+/* LOCALIZAÇÃO */
+.location {
+  padding: 2.5rem 0;
+  margin-top: 2rem;
+  background: #1E1E1E;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(29, 233, 182, 0.05);
+  text-align: center;
+  color: #B0B0B0;
+}
+
+.location h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1DE9B6;
+}
+
+.location address {
+  font-style: normal;
+  font-weight: 600;
+  color: #B0B0B0;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+/* FOOTER */
+.footer {
+  background: #181818;
+  color: #B0B0B0;
+  padding: 1.8rem 0;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-btn svg {
+  display: block;
+  shape-rendering: geometricPrecision;
+  image-rendering: optimizeSpeed;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #222;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  color: #E0E0E0;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.social-btn svg {
+  display: block;
+}
+
+.social-btn.whatsapp {
+  background-color: #1DE9B6;
+  color: #121212;
+}
+
+.social-btn.whatsapp:hover {
+  background-color: #17BFA0;
+}
+
+.social-btn.instagram {
+  background-color: #E1306C;
+  color: white;
+}
+
+.social-btn.instagram:hover {
+  background-color: #bf275c;
+}
+
+.footer-logo {
+  width: 80px;
+  height: auto;
+  margin: 0.5rem 0;
+}
+
+.footer p {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* centraliza logo e telefone */
+    gap: 1.5rem;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column; /* logo e telefone um embaixo do outro */
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  nav ul.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 1rem 1.5rem;
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+
+  /* Posiciona os botões 4 e 5 na segunda linha */
+  nav ul.menu li:nth-child(4) {
+    grid-column: 1 / 2;
+  }
+
+  nav ul.menu li:nth-child(5) {
+    grid-column: 2 / 3;
+  }
+
+  nav ul.menu li a {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+    background-color: #1DE9B6;
+    color: #121212 !important;
+    border-radius: 4px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+
+  nav ul.menu li a:hover {
+    background-color: #17BFA0;
+  }
+}
+
+
