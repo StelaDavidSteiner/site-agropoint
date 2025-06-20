@@ -30,7 +30,7 @@
 - **Google Fonts** (EB Garamond e Rubik)
 - **Hospedagem via GitHub Pages**
 
-
+---
 
 ## 🧑‍💻 Desenvolvido por
 - **Stela David Steiner**
