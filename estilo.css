@@ -24,7 +24,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* HEADER */
 .header {
   background: #1E1E1E;
   color: #E0E0E0;
@@ -55,7 +54,6 @@ body {
   color: #E0E0E0;
 }
 
-/* Estilo unificado para todos os botões do menu e botão reserva */
 nav ul.menu li a,
 .btn-reserva {
   background-color: #1DE9B6;
@@ -80,12 +78,10 @@ nav ul.menu {
   gap: 0.8rem;
 }
 
-/* Remove regras duplicadas */
 nav ul.menu li a {
   font-weight: 700;
 }
 
-/* HERO */
 .hero {
   background: url('hero-bg.jpg') center center/cover no-repeat;
   height: 400px;
@@ -111,15 +107,14 @@ nav ul.menu li a {
 }
 
 .hero h1 {
-  font-family: 'EB Garamond', serif; /* ou troque por outra */
+  font-family: 'EB Garamond', serif;
   font-size: 5rem; 
   font-weight: 700;
   color: white;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* sombra mais forte */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
   margin-bottom: 1rem;
-  letter-spacing: 2px; /* espaçamento entre letras para efeito */
+  letter-spacing: 2px;
 }
-
 
 .hero p {
   font-size: 1.2rem;
@@ -127,7 +122,6 @@ nav ul.menu li a {
   text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 }
 
-/* REGRAS */
 .rules {
   background: #1E1E1E;
   padding: 3rem 0;
@@ -311,13 +305,13 @@ nav ul.menu li a {
   .header .container {
     display: flex;
     flex-direction: column;
-    align-items: center;  /* centraliza logo e telefone */
+    align-items: center;
     gap: 1.5rem;
   }
 
   .logo {
     display: flex;
-    flex-direction: column; /* logo e telefone um embaixo do outro */
+    flex-direction: column;
     align-items: center;
     gap: 0.5rem;
   }
@@ -331,8 +325,6 @@ nav ul.menu li a {
     padding: 0 1rem;
   }
   
-
-  /* Posiciona os botões 4 e 5 na segunda linha */
   nav ul.menu li:nth-child(4) {
     grid-column: 1 / 2;
   }
@@ -359,4 +351,67 @@ nav ul.menu li a {
   }
 }
 
+.list {
+  background: #1E1E1E;
+  padding: 2.5rem 0;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
 
+.list h2 {
+  font-family: 'EB Garamond', serif;
+  color: #1DE9B6;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.list p {
+  color: #B0B0B0;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.dias {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.dia-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #1DE9B6;
+  color: #121212;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s;
+}
+
+.dia-btn:hover,
+.dia-btn.selected {
+  background-color: #17BFA0;
+}
+
+#listaForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#listaForm input[type="text"] {
+  padding: 0.7rem;
+  border-radius: 4px;
+  border: none;
+  font-size: 1rem;
+}
+
+.mensagem {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #1DE9B6;
+}

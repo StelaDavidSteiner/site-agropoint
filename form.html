@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Agro Point - Ibaiti</title>
-
+  <script src="js/script.js" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;700&family=Rubik:wght@400;600&display=swap" rel="stylesheet" /> 
   <link rel="stylesheet" href="estilo.css" />
 </head>
@@ -36,6 +36,27 @@
     </div>
   </section>
 
+<section id="lista" class="list">
+  <div class="container">
+    <h2>Coloque seu Nome na Lista</h2>
+    <p>Escolha o dia e digite seu nome completo:</p>
+
+    <div class="dias">
+      <button type="button" class="dia-btn" data-dia="Quarta-feira">Quarta-feira</button>
+      <button type="button" class="dia-btn" data-dia="Sexta-feira">Sexta-feira</button>
+      <button type="button" class="dia-btn" data-dia="Sábado">Sábado</button>
+    </div>
+
+    <form id="listaForm">
+      <input type="hidden" id="diaEscolhido" name="dia" />
+      <input type="text" id="nome" placeholder="Seu nome completo" required />
+      <a id="whatsappBtn" href="#" class="btn-reserva">Confirmar pelo WhatsApp</a>
+    </form>
+
+    <p id="mensagemSucesso" class="mensagem" style="display:none;">Abrindo WhatsApp...</p>
+  </div>
+</section>
+
   <section id="regras" class="rules">
     <div class="container">
       <h2>Regras da Casa</h2>
@@ -64,7 +85,6 @@
   </div>
 </section>
 
-
 <section id="localizacao" class="location">
   <div class="container">
     <h2>Onde Estamos:</h2>
@@ -76,7 +96,6 @@
     <p><strong>Horário de Atendimento:</strong> Quarta, Sexta e Sábado, das 21h às 03h</p>
   </div>
 </section>
-
 
   <footer class="footer">
     <div class="container footer-content">
