@@ -33,5 +33,5 @@
 
 
 ## 🧑‍💻 Desenvolvido por
-Stela David Steiner
-Estudante de Engenharia de Software
+- **Stela David Steiner**
+- **Estudante de Engenharia de Software**
