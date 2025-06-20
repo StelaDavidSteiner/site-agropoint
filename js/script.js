@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const whatsappBtn = document.getElementById('whatsappBtn');
   const msg = document.getElementById('mensagemSucesso');
 
-  // Seleciona o dia
   botoesDias.forEach(btn => {
     btn.addEventListener('click', () => {
       botoesDias.forEach(b => b.classList.remove('selected'));
@@ -14,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Envia mensagem para o WhatsApp
   whatsappBtn.addEventListener('click', e => {
     e.preventDefault();
 
@@ -31,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const numero = "5541996175009";
     const link = `https://wa.me/${numero}?text=${mensagem}`;
 
-    console.log("Link do WhatsApp:", link); // Para depuração
+    console.log("Link do WhatsApp:", link);
 
     msg.style.display = 'block';
     window.open(link, '_blank');
