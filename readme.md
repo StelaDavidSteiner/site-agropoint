@@ -15,7 +15,6 @@
 - Página inicial com introdução e descrição do local.
 - Sistema de **inserção de nome na lista** com envio automático para o WhatsApp.
 - Informações claras sobre **regras da casa**.
-- Tabela de **valores de entrada** com destaque para horários e diferenciação por gênero.
 - Seção com **endereço e horário de atendimento**.
 - Botões de acesso rápido para **WhatsApp e Instagram**.
 - Totalmente **responsivo** para celulares, tablets e desktops.
